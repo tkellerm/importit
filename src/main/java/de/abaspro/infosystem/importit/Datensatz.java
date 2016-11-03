@@ -3,6 +3,7 @@ package de.abaspro.infosystem.importit;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("LossyEncoding")
 public class Datensatz {
 
 	 private List<Feld> kopfFelder = new ArrayList<Feld>();
@@ -77,9 +78,9 @@ public class Datensatz {
 	 * @return ColNumber
 	 * @throws ImportitException
 	 * 
-	 * In den Kopffeldern nach dem ersten Schlüssel gesucht, falls ein 2. angeben wird, 
+	 * In den Kopffeldern nach dem ersten Schlï¿½ssel gesucht, falls ein 2. angeben wird, 
 	 * wird eine ImportitExeption geworfen.
-	 * Als Rückgabewert wird die Spaltenummer zurückgegeben 
+	 * Als Rï¿½ckgabewert wird die Spaltenummer zurï¿½ckgegeben 
 	 * 
 	 */
 	private Integer checkKeyField(List<Feld> kopfFelder2) throws ImportitException {
@@ -89,7 +90,7 @@ public class Datensatz {
 		for (Feld feld : kopfFelder2) {
 			if (!feld.getKey().isEmpty()) {
 				if (keyfield != 0) {
-					throw new ImportitException("Es wurden mehrere Schlüssel eingetragen! Es ist nur einer erlaubt");
+					throw new ImportitException("Es wurden mehrere Schlï¿½ssel eingetragen! Es ist nur einer erlaubt");
 				}
 				keyfield = feld.getColNumber();
 			}
