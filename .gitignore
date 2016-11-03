@@ -1,0 +1,9 @@
+# dev env specific files
+.classpath
+.settings/
+.project
+
+# build files
+bin/
+classes/
+build/
