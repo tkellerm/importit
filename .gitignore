@@ -1,4 +1,5 @@
 # dev env specific files
+.idea/
 .classpath
 .settings/
 .project
@@ -7,3 +8,7 @@
 bin/
 classes/
 build/
+
+# gradle specific files
+.gradle
+gradle.properties
